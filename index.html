@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container1">
+        <img src="images/user.png">
+
+        <h2>Alpha Quiz System</h2>
+    </div>
+
+    <div class="container2">
+        <div class="header">
+            <h2>User Login</h2>
+        </div>
+    
+        <form action="rules.html" onsubmit="validate()" class="form" id="form">
+            <div class="form-control user">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" name="" id="username" placeholder="Enter UserId">
+            </div>
+
+            <div class="form-control pass">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" name="" id="password" placeholder="Enter password">
+            </div>
+
+            <input type="submit" value="Submit" class="btn">
+    </div>
+
+
+
+    <script type="text/javascript">
+
+       function validate(){
+           var uname=document.getElementById('username');
+           var pass=document.getElementById('password');
+
+           if(uname.value!=="admin" || pass.value!=="admin"){
+               alert("Enter correct username or password");
+           }
+           else{
+               alert("Login success");
+           }
+       }
+        
+   </script>
+</body>
+</html>
